@@ -105,7 +105,7 @@
 @mixin invert($background:#000,$color:#fff) {
   border: 2px solid $background;
   &:hover {
-    background: $background;
-    color: $color;
+    background: $background !important;
+    color: $color !important;
   }
 }
