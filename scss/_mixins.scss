@@ -101,3 +101,11 @@
   margin-bottom:-#{$offset};
   z-index:10;
 }
+
+@mixin invert($background:#000,$color:#fff) {
+  border: 2px solid $background;
+  &:hover {
+    background: $background;
+    color: $color;
+  }
+}

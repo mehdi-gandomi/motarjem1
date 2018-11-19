@@ -14,14 +14,57 @@
   </head>
   <body>
     <header>
+      <nav class="top-nav">
+        <div class="user-auth">
+          <a href="#" class="sign-in primary--color">
+            <i class="icon-login"></i> وارد شوید
+          </a>
+          <a href="#" class="sign-up success--color">
+            <i class="icon-user-add"></i> عضو شوید و سفارش دهید
+          </a>
+        </div>
+        <div class="social-media">
+          <ul>
+            <li>
+              <a
+                href="https://telegram.me/joinchat/AAAAAENnLiWdB6XvCvuB5w"
+                target="_blank"
+                class="icon-telegram"
+              >
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.linkedin.com/in/motarjem-one"
+                class="icon-linkedin-squared"
+              >
+              </a>
+            </li>
+            <li>
+              <a href="https://twitter.com/MOTARJEM11" class="icon-twitter">
+              </a>
+            </li>
+
+            <li>
+              <a
+                href="https://instagram.com/motarjemone"
+                target="_blank"
+                class="icon-instagram"
+              >
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
       <nav class="main-navbar">
         <div class="nav-toggle"><i></i><i></i><i></i></div>
         <a href="" class="nav-brand">
           <img src="images/logo.png" alt="brand" />
           <div class="nav-brand__text">
             <h4 class="nav-brand__text__title">مترجم 1</h4>
-            <p class="nav-brand__text__description">جامع ترین وب سایت خدمات ترجمه تخصصی
-              </p>
+            <p class="nav-brand__text__description">
+              جامع ترین وب سایت خدمات ترجمه تخصصی
+            </p>
           </div>
         </a>
         <ul class="nav-menu nav">
@@ -35,17 +78,21 @@
         </ul>
         <div class="nav-options">
           <ul class="nav">
-            <li><a class="button outline" href="#">ورود / ثبت نام</a></li>
+            <li>
+              <a class="button is--success is--outline " href="#">
+                <i class="icon-cart-plus"></i> سفارش</a
+              >
+            </li>
           </ul>
         </div>
       </nav>
     </header>
     <main>
-      <div id="main-slider" class="carousel slide" data-ride="carousel">
-        <!-- Indicators -->
+      <section id="main-slider" class="carousel slide" data-ride="carousel">
         <ol class="carousel-indicators">
-          <li data-target="#main-slider" data-slide-to="0" class="active"></li>
+          <li class="active" data-target="#main-slider" data-slide-to="0"></li>
           <li data-target="#main-slider" data-slide-to="1"></li>
+          <li data-target="#main-slider" data-slide-to="2"></li>
         </ol>
 
         <!-- Wrapper for Slides -->
@@ -54,7 +101,7 @@
             <!-- Set the first background image using inline CSS below. -->
             <div
               class="fill"
-              style="background-image:url('images/slider1.jpg');"
+              style="background-image:url('images/translate.png');"
             ></div>
             <div class="carousel-caption">
               <h2 class="animated fadeInLeft">ترجمه مقاله</h2>
@@ -73,7 +120,25 @@
             <!-- Set the third background image using inline CSS below. -->
             <div
               class="fill"
-              style="background-image:url('images/slider2.jpg');"
+              style="background-image:url('images/research.jpg');"
+            ></div>
+            <div class="carousel-caption">
+              <h2 class="animated fadeInRight">تحقیق</h2>
+              <p class="animated fadeInRight">
+                انجام تحقیقات شما و تایپ آنها در سریع ترین زمان ممکن
+              </p>
+              <p class="animated fadeInRight">
+                <a href="#" class="btn btn-transparent btn-rounded btn-large"
+                  >همین الان سفارش دهید !</a
+                >
+              </p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <!-- Set the third background image using inline CSS below. -->
+            <div
+              class="fill"
+              style="background-image:url('images/typing.png');"
             ></div>
             <div class="carousel-caption">
               <h2 class="animated fadeInRight">تایپ مقالات</h2>
@@ -108,8 +173,8 @@
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
           <span class="sr-only">Next</span>
         </a>
-      </div>
-      <div class="about-section container-fluid">
+      </section>
+      <section class="about-section container-fluid">
         <h3 class="text-center">درباره ما</h3>
         <p>
           سایت مترجم وان به عنوان مرکزی فعال خدمات ترجمه متون را به صورت تخصصی ،
@@ -139,8 +204,8 @@
         <div class="about-section__action">
           <a href="#" class="btn btn-success btn--rounded">اطلاعات بیشتر</a>
         </div>
-      </div>
-      <div class="container-fluid feature-section">
+      </section>
+      <section class="container-fluid feature-section">
         <h3 class="text-center p-5">خدمات ما</h3>
         <div class="row">
           <div class="col-lg-3 col-sm-6">
@@ -212,7 +277,98 @@
             </div>
           </div>
         </div>
-      </div>
+      </section>
+      <section class="recent-posts-wrap rtl">
+        <div class="container">
+          <h4 class="text-center mt-4 mb-4">آخرین مطالب وبلاگ</h4>
+          <div class="row">
+            <div class="col-lg-4">
+              <div class="post">
+                <img
+                  class="post__thumbnail"
+                  src="images/blog.png"
+                  alt="Card image cap"
+                />
+                <div class="post__body ">
+                  <h5 class="post__title">
+                    ترجمه انگلیسی به فارسی در مترجم وان
+                  </h5>
+                  <ul class="post__categories">
+                    <li class="post__category"><a href="#">#آموزشی</a></li>
+                  </ul>
+                  <p class="post__content">
+                    بسیاری از دانشجویان، اساتید و حتی صاحبین مشاغل به دلایلی از
+                    جمله نداشتن وقت کافی برای ترجمه، کار ترجمه شان را به سایت ها
+                    و شرکت های ترجمه می سپارند. ترجمه مقاله بیشترین سهم را در
+                    این میان دارد. در این مطلب در رابطه با…
+                  </p>
+                  <div href="#" class="post__footer">
+                    <a href="#" class="button read--more is--outline"
+                      >ادامه خواندن</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="post">
+                <img
+                  class="post__thumbnail"
+                  src="images/blog.png"
+                  alt="Card image cap"
+                />
+                <div class="post__body ">
+                  <h5 class="post__title">
+                    ترجمه انگلیسی به فارسی در مترجم وان
+                  </h5>
+                  <ul class="post__categories">
+                    <li class="post__category"><a href="#">#آموزشی</a></li>
+                  </ul>
+                  <p class="post__content">
+                    بسیاری از دانشجویان، اساتید و حتی صاحبین مشاغل به دلایلی از
+                    جمله نداشتن وقت کافی برای ترجمه، کار ترجمه شان را به سایت ها
+                    و شرکت های ترجمه می سپارند. ترجمه مقاله بیشترین سهم را در
+                    این میان دارد. در این مطلب در رابطه با…
+                  </p>
+                  <div href="#" class="post__footer">
+                    <a href="#" class="button read--more is--outline"
+                      >ادامه خواندن</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="post">
+                <img
+                  class="post__thumbnail"
+                  src="images/blog.png"
+                  alt="Card image cap"
+                />
+                <div class="post__body ">
+                  <h5 class="post__title">
+                    ترجمه انگلیسی به فارسی در مترجم وان
+                  </h5>
+                  <ul class="post__categories">
+                    <li class="post__category"><a href="#">#آموزشی</a></li>
+                  </ul>
+                  <p class="post__content">
+                    بسیاری از دانشجویان، اساتید و حتی صاحبین مشاغل به دلایلی از
+                    جمله نداشتن وقت کافی برای ترجمه، کار ترجمه شان را به سایت ها
+                    و شرکت های ترجمه می سپارند. ترجمه مقاله بیشترین سهم را در
+                    این میان دارد. در این مطلب در رابطه با…
+                  </p>
+                  <div href="#" class="post__footer">
+                    <a href="#" class="button read--more is--outline"
+                      >ادامه خواندن</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
     <footer class="footer ">
       <div class="top-footer">
@@ -251,64 +407,66 @@
                     <div class="post__thumbnail">
                       <img src="images/blog.png" alt="" />
                     </div>
-                    
+
                     <div class="post__details">
-                        <div class="post__details__title">عنوان پست اول</div>
-                        <div class="post__details__date">
-                          <i class="icon-clock"></i>
-                          28 آبان 97
-                        </div>
+                      <div class="post__details__title">عنوان پست اول</div>
+                      <div class="post__details__date">
+                        <i class="icon-clock"></i> 28 آبان 97
+                      </div>
                     </div>
                   </article>
                 </a>
               </li>
               <li>
-                  <a href="#">
-                    <article class="post">
-                      <div class="post__thumbnail">
-                        <img src="images/blog.png" alt="" />
+                <a href="#">
+                  <article class="post">
+                    <div class="post__thumbnail">
+                      <img src="images/blog.png" alt="" />
+                    </div>
+
+                    <div class="post__details">
+                      <div class="post__details__title">عنوان پست اول</div>
+                      <div class="post__details__date">
+                        <i class="icon-clock"></i> 28 آبان 97
                       </div>
-                      
-                      <div class="post__details">
-                          <div class="post__details__title">عنوان پست اول</div>
-                          <div class="post__details__date">
-                            <i class="icon-clock"></i>
-                            28 آبان 97
-                          </div>
+                    </div>
+                  </article>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <article class="post">
+                    <div class="post__thumbnail">
+                      <img src="images/blog.png" alt="" />
+                    </div>
+
+                    <div class="post__details">
+                      <div class="post__details__title">عنوان پست اول</div>
+                      <div class="post__details__date">
+                        <i class="icon-clock"></i> 28 آبان 97
                       </div>
-                    </article>
-                  </a>
-                </li>
-                <li>
-                    <a href="#">
-                      <article class="post">
-                        <div class="post__thumbnail">
-                          <img src="images/blog.png" alt="" />
-                        </div>
-                        
-                        <div class="post__details">
-                            <div class="post__details__title">عنوان پست اول</div>
-                            <div class="post__details__date">
-                              <i class="icon-clock"></i>
-                              28 آبان 97
-                            </div>
-                        </div>
-                      </article>
-                    </a>
-                  </li>
+                    </div>
+                  </article>
+                </a>
+              </li>
             </ul>
           </div>
           <div class="col-lg-5 col-sm-12 section about-us">
-            <h4 class="section__title">
-              درباره ما
-            </h4>
+            <h4 class="section__title">درباره ما</h4>
             <p class="section__info about-us__content">
-                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. کتابهای زیادی در شصت و سه درصد گذشته، حال و آینده شناخت فراوان جامعه و متخصصان را می طلبد تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی و فرهنگ پیشرو در زبان فارسی ایجاد کرد. 
+              لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
+              استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله
+              در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد
+              نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد.
+              کتابهای زیادی در شصت و سه درصد گذشته، حال و آینده شناخت فراوان
+              جامعه و متخصصان را می طلبد تا با نرم افزارها شناخت بیشتری را برای
+              طراحان رایانه ای علی الخصوص طراحان خلاقی و فرهنگ پیشرو در زبان
+              فارسی ایجاد کرد.
             </p>
             <div class="about-us__certificates">
-              <img src="images/certificate1.png" alt="">
-              <img src="images/certificate2.png" alt="">
-              <img src="images/certificate3.png" alt="">
+              <img src="images/certificate1.png" alt="" />
+              <img src="images/certificate2.png" alt="" />
+              <img src="images/certificate3.png" alt="" />
             </div>
           </div>
         </div>
