@@ -14,7 +14,6 @@
   align-items: center;
   border-radius: 2px;
   height: $feature-card-height;
-  
   overflow: hidden;
   padding: 1rem;
   position: relative;
@@ -81,5 +80,11 @@
   100% {
     top: 50%;
     transform: translateY(-50%);
+  }
+}
+
+@media(max-width:768px){
+  .feature-box{
+    margin: 1rem 0;
   }
 }
