@@ -272,10 +272,14 @@
     flex-direction: column;
     .useful-links{
       order: 2;
-      padding-top: 1rem;
+      padding-top: 0.5rem 0;
+      margin: 0 !important;
     }
     .social-media-links{
       order: 1;
+    }
+    .copy-right{
+      order: 3;
     }
   }
 }
