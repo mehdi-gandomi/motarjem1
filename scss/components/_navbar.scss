@@ -258,6 +258,21 @@ header {
     flex-shrink: 1;
     z-index: 21;
   }
+  .top-nav{
+    .user-auth{
+      span{
+        display: none;
+      }
+      a{
+        display: inline-flex;
+        width: 40px;
+        height: 30px;
+        justify-content: center;
+        align-items: center;
+        font-size: 1rem !important;
+      }
+    }
+  }
   .nav-brand {
     flex-grow: 1;
     display: flex;
