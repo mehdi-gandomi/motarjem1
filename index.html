@@ -13,7 +13,7 @@
     />
   </head>
   <body>
-    <header>
+    <header >
       <nav class="top-nav">
         <div class="user-auth">
           <a href="#" class="sign-in primary--color">
@@ -56,7 +56,7 @@
           </ul>
         </div>
       </nav>
-      <nav class="main-navbar">
+      <nav class="main-navbar ">
         <div class="nav-toggle"><i></i><i></i><i></i></div>
         <a href="" class="nav-brand">
           <img src="images/logo.png" alt="brand" />
@@ -174,6 +174,67 @@
           <span class="sr-only">Next</span>
         </a>
       </section>
+      <section class="price-calculate">
+        <form action="" class="price-form container">
+          <div class="row align-items-center">
+            <h5 class="col-lg-2">برآورد هزینه</h5>
+            <div class="form-group col-lg-3">
+              <select name="language" id="" class="form-control">
+                <option value="" disabled="">انتخاب زبان</option>
+                <option value="1" selected="">انگلیسی به فارسی</option>
+                <option value="0">فارسی به انگلیسی</option>
+              </select>
+            </div>
+            <div class="form-group col-lg-3">
+              <select
+                class="form-control"
+                placeholder="زمینه ترجمه"
+                name="type"
+              >
+                <option value="" disabled="">انتخاب زمینه</option>
+                <option value="100" selected="">عمومی</option>
+                <option value="101">پزشکی</option>
+                <option value="102">زیست شناسی و علوم آزمایشگاهی</option>
+                <option value="103">علم شیمی</option>
+                <option value="104">اقتصاد - مالی - حسابداری</option>
+                <option value="105">فقه و فلسفه</option>
+                <option value="106">حقوق</option>
+                <option value="107">مجموعه مدیریت و مهندسی صنایع</option>
+                <option value="108">مهندسی مکانیک</option>
+                <option value="109">مهندسی عمران</option>
+                <option value="110">مهندسی معماری</option>
+                <option value="111">مهندسی کامپیوتر</option>
+                <option value="112">مجموعه مهندسی برق</option>
+                <option value="113">متون تجاری و بازرگانی</option>
+                <option value="114">روانشناسی و علوم اجتماعی</option>
+                <option value="115">ادبیات و زبان شناسی</option>
+                <option value="116">متالوژی-علم مواد-نفت و گاز</option>
+                <option value="117">علم فیزیک</option>
+                <option value="118">مجموعه ریاضیات و آمار</option>
+                <option value="119">گردشگری</option>
+                <option value="120">کشاورزی و صنایع غذایی</option>
+              </select>
+            </div>
+            <div class="form-group col-lg-2">
+              <input
+                type="number"
+                class="form-control"
+                name="words"
+                placeholder="تعداد کلمه"
+              />
+            </div>
+            <div class="form-group col-lg-2">
+              <button
+                type="submit"
+                name="submit"
+                class="button button--calc is--outline has--shadow-light"
+              >
+                <i class="icon-calc"></i> محاسبه
+              </button>
+            </div>
+          </div>
+        </form>
+      </section>
       <section class="about-section container-fluid">
         <h3 class="text-center">درباره ما</h3>
         <p>
@@ -276,6 +337,58 @@
               </div>
             </div>
           </div>
+        </div>
+      </section>
+      <section class="hire-translator">
+        <h4 class="text-center mt-4">مترجم هستید؟</h4>
+        <div class="animation-wrap">
+          <img
+            class="animation-wrap__main-image"
+            src="images/translator.png"
+            alt="hire-translator"
+          />
+          <div class="animation-wrap__item top--right ">
+            <div class="animation-wrap__item__icon">
+              <img src="images/icon/register.svg" alt="sign up" />
+            </div>
+            <h4 class="animation-wrap__item__title">ثبت نام کنید</h4>
+            <p class="animation-wrap__item__subtitle">
+                ابتدا ثبت نام کنید و بعد از شرکت در آزمونهای ورودی به عنوان مترجم استخدام سایت ترجمه تخصصی ترنسیس شوید
+            </p>
+          </div>
+          <div class="animation-wrap__item top--left ">
+              <div class="animation-wrap__item__icon">
+                <img src="images/icon/project.svg" alt="project" />
+              </div>
+              <h4 class="animation-wrap__item__title">در پروژه های ترجمه شرکت کنید
+                </h4>
+              <p class="animation-wrap__item__subtitle">
+                  پروژه های ترجمه مرتبط با تخصص شما معرفی میشوند، آنها را مشاهده و پیشنهادتان را برای ترجمه تخصصی آن متون اعلام کنید
+              </p>
+            </div>
+            <div class="animation-wrap__item bottom--right ">
+                <div class="animation-wrap__item__icon">
+                  <img src="images/icon/conversation.svg" alt="chat" />
+                </div>
+                <h4 class="animation-wrap__item__title">با کارفرما در ارتباط باشید
+
+                  </h4>
+                <p class="animation-wrap__item__subtitle">
+                     هر زمان که خواستید می توانید با کارفرمایان پروژه ترجمه خود آنلاین در ارتباط باشید
+                </p>
+              </div>
+              <div class="animation-wrap__item bottom--left ">
+                  <div class="animation-wrap__item__icon">
+                    <img src="images/icon/get-money.svg" alt="chat" />
+                  </div>
+                  <h4 class="animation-wrap__item__title"> کسب درآمد کنید
+
+  
+                    </h4>
+                  <p class="animation-wrap__item__subtitle">
+                      پس از انجام پروژه ترجمه فایل ترجمه شده را به کارفرما تحویل دهید و پس از کسب رضایت وی حق الزحمه خود را دریافت کنید
+                  </p>
+                </div>
         </div>
       </section>
       <section class="recent-posts-wrap rtl">

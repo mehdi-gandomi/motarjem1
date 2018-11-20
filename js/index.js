@@ -1,33 +1,9 @@
-let refOffset = 0;
-let visible = true;
-const bannerHeight = 87;
-const newOffset=0;
-const bannerWrapper = document.querySelector("header");
-const banner = document.querySelector(".main-navbar");
-const handler = function(e) {
-  console.log("fuck");
-  newOffset = window.scrollY;
-
-  if (newOffset > bannerHeight) {
-    if (newOffset > refOffset) {
-      bannerWrapper.classList.remove("animateIn");
-      bannerWrapper.classList.add("animateOut");
-    } else {
-      bannerWrapper.classList.remove("animateOut");
-      bannerWrapper.classList.add("animateIn");
-    }
-    banner.style.background = "rgba(162, 197, 35, 0.6)";
-    refOffset = newOffset;
-  } else {
-    banner.style.backgroundColor = "rgba(162, 197, 35, 1)";
-  }
-};
 
 function select(selector) {
   return document.querySelector(selector);
 }
 function selectAll(selector) {
-  return document.querySelectorAll(".carousel-item");
+  return document.querySelectorAll(selector);
 }
 function addListener(el, type, callback) {
   el.addEventListener(type, callback);
@@ -55,6 +31,61 @@ function createEl(tagName, classes, attributes) {
   return el;
 }
 
+let refOffset = 0;
+let visible = true;
+const bannerHeight = 87;
+let newOffset=0;
+const bannerWrapper = select("header");
+const banner =select(".main-navbar");
+const body=select("body");
+const mainSlider=select("#main-slider");
+function handleStickyNavbar(){
+  if (newOffset > bannerHeight) {
+    if (newOffset > refOffset) {
+      banner.classList.add("sticky");
+      banner.classList.remove("animateIn");
+      banner.classList.add("animateOut");
+    } else {
+      banner.classList.add("sticky");
+      banner.classList.remove("animateOut");
+      banner.classList.add("animateIn");
+      // if(newOffset<refOffset){
+      //   setTimeout(function(){
+      //     banner.classList.remove("animateIn");
+      //     banner.classList.add("animateOut");
+      //   },5000);
+      // }
+    }
+    banner.style.background = '#071e3d';
+    refOffset = newOffset;
+  }
+  else{
+    // banner.style.transition="";
+    banner.classList.remove("sticky");
+    banner.classList.remove("animateIn");
+    banner.classList.remove("animateOut");
+  }
+  
+}
+
+function handleHiringSection(){
+    // animate hire translator section
+
+    if(newOffset>=1000){
+      selectAll(".animation-wrap__item").forEach(function(el){
+        el.classList.add("animate");
+      })
+     
+    }
+}
+const handler = function(e) {
+  newOffset = e.currentTarget.scrollTop;
+  handleStickyNavbar();
+  handleHiringSection();
+};
+
+
+
 document.addEventListener("DOMContentLoaded", function(e) {
   
   //navbar toggle
@@ -69,7 +100,7 @@ document.addEventListener("DOMContentLoaded", function(e) {
 });
 //sticky navigation scroll animation
   
-window.addEventListener("scroll",handler, false);
+body.addEventListener("scroll",handler, false);
 // create slider indicators dynamically
 
 // document.addEventListener("DOMContentLoaded", function(e) {
