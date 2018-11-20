@@ -32,6 +32,9 @@ header {
     }
   }
   .social-media {
+    li{
+      margin: 0 0.3rem;
+    }
     a {
       @include easeOut(0.3);
     }
@@ -76,7 +79,7 @@ header {
     width: 100%;
   }
   &.animateIn {
-    transform: translateY(-40px);
+    transform: translateY(-47px);
     .nav-brand__text{
       display: none;
     }
