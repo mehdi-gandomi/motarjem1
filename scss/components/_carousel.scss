@@ -4,8 +4,8 @@
     height: $main-slider-height;
  
     p{padding:10px}
-}
-.carousel,
+
+    .carousel,
 .item,
 .active {
     height: 100%;
@@ -15,6 +15,14 @@
   height: 100%;
   background: #000;
 }
+.carousel-indicators li{
+  &.active{
+    background: #fff;
+    height: 3px;
+  }
+}
+}
+
 
 .carousel-caption{padding-bottom:80px;}
 

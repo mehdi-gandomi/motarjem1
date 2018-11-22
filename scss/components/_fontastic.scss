@@ -1,11 +1,11 @@
 @font-face {
   font-family: 'motarjem1';
-  src: url('../fonts/motarjem1.eot?30719172');
-  src: url('../fonts/motarjem1.eot?30719172#iefix') format('embedded-opentype'),
-       url('../fonts/motarjem1.woff2?30719172') format('woff2'),
-       url('../fonts/motarjem1.woff?30719172') format('woff'),
-       url('../fonts/motarjem1.ttf?30719172') format('truetype'),
-       url('../fonts/motarjem1.svg?30719172#motarjem1') format('svg');
+  src: url('../fonts/motarjem1.eot?48199019');
+  src: url('../fonts/motarjem1.eot?48199019#iefix') format('embedded-opentype'),
+       url('../fonts/motarjem1.woff2?48199019') format('woff2'),
+       url('../fonts/motarjem1.woff?48199019') format('woff'),
+       url('../fonts/motarjem1.ttf?48199019') format('truetype'),
+       url('../fonts/motarjem1.svg?48199019#motarjem1') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -15,7 +15,7 @@
 @media screen and (-webkit-min-device-pixel-ratio:0) {
   @font-face {
     font-family: 'motarjem1';
-    src: url('../fonts/motarjem1.svg?30719172#motarjem1') format('svg');
+    src: url('../fonts/motarjem1.svg?48199019#motarjem1') format('svg');
   }
 }
 */
@@ -29,7 +29,7 @@
   display: inline-block;
   text-decoration: inherit;
   width: 1em;
-  // margin-right: .2em;
+  margin-right: .2em;
   text-align: center;
   /* opacity: .8; */
  
@@ -38,11 +38,11 @@
   text-transform: none;
  
   /* fix buttons height, for twitter bootstrap */
-  // line-height: 1em;
+  line-height: 1em;
  
   /* Animation center compensation - margins should be symmetric */
   /* remove if not needed */
-  // margin-left: .2em;
+  margin-left: .2em;
  
   /* you can be more comfortable with increased icons size */
   /* font-size: 120%; */
@@ -61,10 +61,16 @@
 .icon-phone:before { content: '\e803'; } /* '' */
 .icon-calendar:before { content: '\e804'; } /* '' */
 .icon-clock:before { content: '\e805'; } /* '' */
+.icon-left-open-big:before { content: '\e806'; } /* '' */
+.icon-right-open-big:before { content: '\e807'; } /* '' */
+.icon-up-open-big:before { content: '\e808'; } /* '' */
+.icon-down-open-big:before { content: '\e809'; } /* '' */
 .icon-phone-squared:before { content: '\f098'; } /* '' */
 .icon-twitter:before { content: '\f099'; } /* '' */
 .icon-comment-empty:before { content: '\f0e5'; } /* '' */
 .icon-mobile:before { content: '\f10b'; } /* '' */
+.icon-quote-left:before { content: '\f10d'; } /* '' */
+.icon-quote-right:before { content: '\f10e'; } /* '' */
 .icon-instagram:before { content: '\f16d'; } /* '' */
 .icon-calc:before { content: '\f1ec'; } /* '' */
 .icon-cart-plus:before { content: '\f217'; } /* '' */
