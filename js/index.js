@@ -78,10 +78,24 @@ function handleHiringSection(){
      
     }
 }
+
+function handleTelegramAd(){
+  if(newOffset>=820){
+    select(".telegram-ad__image").classList.add("animate");
+    select(".telegram-ad__title").classList.add("animate");
+    select(".telegram-ad__subtitle").classList.add("animate");
+    select(".telegram-ad__content").classList.add("animate");
+    selectAll(".telegram-ad__action__button").forEach(function(el){
+      el.classList.add("animate");
+    })
+  }
+}
+
 const handler = function(e) {
   newOffset = e.currentTarget.scrollTop;
   handleStickyNavbar();
   handleHiringSection();
+  handleTelegramAd();
 };
 
 
